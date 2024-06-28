@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewPontuacaoJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogador: 0"
+        android:textSize="24sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewPontuacaoMaquina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Máquina: 0"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginBottom="20dp">
+
+        <!-- Definindo os botões com estilo e cor de fundo personalizada -->
+        <Button android:id="@+id/button00" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button01" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button02" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button10" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button11" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button12" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button20" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button21" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/button22" style="@style/EstiloBotao" android:textColor="#FFFFFF"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/buttonReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Jogo"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:onClick="reiniciarJogo"/>
+
+</LinearLayout>
